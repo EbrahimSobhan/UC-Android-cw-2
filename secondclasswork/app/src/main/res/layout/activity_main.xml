@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B54CAF50"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="34dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittextfirstnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewtitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="first number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edittextsecondnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittextfirstnumber"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="second number"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textviewresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittextsecondnumber"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="21dp"
+        android:text="resulte"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewresult"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/purple_200"
+        android:backgroundTint="@color/white"
+        android:text="calculate" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="59dp"
+        app:srcCompat="@drawable/calculater" />
+</RelativeLayout>
